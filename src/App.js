@@ -1,25 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+
+import ClassProp from './components/ClassProp'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ClassProp lastName="kone"firstName="akira" age={24} hairColor="brown" />
+      <ClassProp lastName="kone"firstName="ousmane" age={28} hairColor="brown" />
+      <ClassProp lastName="ly"firstName="rose" age={60} hairColor="brown" />
+      <ClassProp lastName="love"firstName="Asia" age={21} hairColor="ginger" />
     </div>
   );
 }
 
 export default App;
+
